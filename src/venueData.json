@@ -1,0 +1,66 @@
+[{  
+            "id":"4e036a9c18a819eb596741b5",
+            "name":"Centre Yoga & Wellbeing",
+            "contact":{  
+               "phone":"+441429275794",
+               "formattedPhone":"+44 1429 275794"
+            },
+            "location":{  
+               "address":"64 - 74 Park Road, Hartlepool, Cleveland TS24 7RL",
+               "crossStreet":"York Road",
+               "lat":54.684571274999996,
+               "lng":-1.2132112874999998,
+               "labeledLatLngs":[  
+                  {  
+                     "label":"display",
+                     "lat":54.684571274999996,
+                     "lng":-1.2132112874999998
+                  }
+               ],
+               "distance":97074,
+               "postalCode":"TS26 9HU",
+               "cc":"GB",
+               "city":"Hartlepool",
+               "country":"United Kingdom",
+               "formattedAddress":[  
+                  "64 - 74 Park Road, Hartlepool, Cleveland TS24 7RL (York Road)",
+                  "Hartlepool",
+                  "TS26 9HU",
+                  "United Kingdom"
+               ]
+            },
+            "categories":[  
+               {  
+                  "id":"4bf58dd8d48988d1f9931735",
+                  "name":"Road",
+                  "pluralName":"Roads",
+                  "shortName":"Road",
+                  "icon":{  
+                     "prefix":"https:\/\/ss3.4sqi.net\/img\/categories_v2\/travel\/highway_",
+                     "suffix":".png"
+                  },
+                  "primary":true
+               }
+            ],
+            "verified":false,
+            "stats":{  
+               "checkinsCount":1,
+               "usersCount":1,
+               "tipCount":2
+            },
+            "venueRatingBlacklisted":true,
+            "beenHere":{  
+               "lastCheckinExpiredAt":0
+            },
+            "specials":{  
+               "count":0,
+               "items":[  
+
+               ]
+            },
+            "referralId":"v-1490964248",
+            "venueChains":[  
+
+            ],
+            "hasPerk":false
+         }]

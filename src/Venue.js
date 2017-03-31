@@ -1,9 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 var Venue = React.createClass({
 	render: function (){
 		return (
-				<h1>{this.props.name}</h1>
+				<ul>
+					<h1>{this.props.name}</h1>
+					<p>{this.props.type}</p>
+					<p>{this.props.postcode}</p>
+				</ul>
 			)
 	}
 })

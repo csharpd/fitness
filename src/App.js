@@ -8,16 +8,26 @@ import axios from 'axios';
 
 var App = React.createClass({
   getInitialState() {
-    return {selected: null, venues: []}
+    return {selected: null, venues: [], venueIndex: 0}
   },
 
   callFoursquare(activity) {
       axios.get(`https://api.foursquare.com/v2/venues/explore?oauth_token=UJEPMETKL0M4ZEN3BIEVALPLESODSAMKF02CLZMN41EL2AJB&v=20131016&ll=51.5%2C0.12&query=${activity}`)
             .then(response => {
               this.setState(
-                {selected: activity, venues:response.data.response.groups[0].items}
+                {selected: activity, venues:response.data.response.groups[0].items, venueIndex: 0}
             )
       })
+  },
+
+  incrementVenueIndex(){
+    this.setState(
+        {venueIndex: this.state.venueIndex + 1}
+      )
+  },
+
+  venuesPresent(){
+    return this.state.venues.length > 0
   },
 
   render: function () {
@@ -27,7 +37,10 @@ var App = React.createClass({
         <Sport activity='boxing' selected={this.state.selected} callFoursquare={this.callFoursquare} />
         <Sport activity='barre' selected={this.state.selected} callFoursquare={this.callFoursquare} />
 
-        <SuggestionContainer venues={this.state.venues}/>
+        {this.venuesPresent() &&
+          <SuggestionContainer venue={this.state.venues[this.state.venueIndex]} incrementVenueIndex={this.incrementVenueIndex}/> 
+        }
+        
 
       </div>
     )
